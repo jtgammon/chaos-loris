@@ -60,7 +60,7 @@ public class ChaosLoris {
                                                 @Value("${loris.cloudfoundry.username}") String username,
                                                 @Value("${loris.cloudfoundry.port:443}") Integer port,
                                                 @Value("${loris.cloudfoundry.password}") String password,
-                                                @Value("${loris.cloudfoundry.skipSslValidation:false}") Boolean skipSslValidation) {
+                                                @Value("${loris.cloudfoundry.skipSslValidation:true}") Boolean skipSslValidation) {
 
         return SpringCloudFoundryClient.builder()
             .host(host)
